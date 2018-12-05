@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Tahoma, sans-serif;
+	line-height: 1.0;
+	color: #333333;
+}
+.title {
+	text-align: center;
+	font-size: 24px;
+font-weight: 300;
+margin-top: 80px;
+}
+
+.title-1 {
+	text-align: center;
+	font-size: 24px;
+font-weight: 300;
+margin-top: 80px;
+} 
+
+.title-1 strong {
+
+	display: block;
+	text-transform: uppercase;
+	margin-top: 150px;
+	font-weight: 900;
+}
+
+.title strong {
+	display: block;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-weight: 900;
+}
+
+.main {
+	text-align: center;
+}
+
+.video, .menu {
+	display: inline-block;
+	margin-top: 85px;
+
+}
+
+.menu {
+	border: 5px solid #2727d9;
+	margin-left: 30px; 
+	height: 300px;
+	vertical-align: top;
+}
+
+.menu input {
+	display: block;
+	height: 40px;
+	width: 300px;
+	margin: 10px 25px;
+	border: 1px solid #333333;
+	padding: 23px;
+}
+
+.menu-title {
+	padding: 20px;
+text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.menu-button {
+	width: 300px;
+	height: 60px;
+	background-color: #2727d9;
+	border: none;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 28px;
+	}
+
+.block-1 {
+	text-align: center;
+}
+
+.collony {
+	display: inline-block;
+padding: 20px 50px;
+	margin-top: 60px;
+}
+
+.menu-button-1 {
+	display: block;
+    width: 300px;
+	height: 60px;
+	background-color: #2727d9;
+	border: none;
+	color: white;
+	font-size: 18px;
+	margin: 60px auto;
+	}
+.block-2 {
+	text-align: center;
+}
+	.people {
+		margin-top: 75px;
+		display: inline-block;
+		padding: 0px 12px;
+	}
+
+	.people-1 {
+		display: inline-block;
+		margin-top: 34px;
+padding: 0px 12px;
+margin-bottom: 50px;
+	}
+
+p {
+	margin-top: 15px;
+	font-weight: 900;
+}
