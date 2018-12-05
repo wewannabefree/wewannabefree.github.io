@@ -3,4 +3,4 @@
 # Do you want to be like us?
 Then follow me
 
-[First CSS-based only site](
+[First CSS-based only site](https://wewannabefree.github.io/homework/ "Lesson 1")
