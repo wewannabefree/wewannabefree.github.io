@@ -1,0 +1,20 @@
+.title {
+	font-size: 36px;
+	margin: 130px auto;
+}
+
+.features-box {
+
+	height: 200px;
+}
+
+.features-box p {
+	font-weight: 600;
+	margin: 30px auto;
+	font-size: 15px;
+}
+
+.features-box img {
+	
+	height: 125px;
+}
