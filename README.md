@@ -15,9 +15,9 @@ Then follow me
 
 [Bootstrap](https://wewannabefree.github.io/Bootstrap/) 
 
-[CSS3 Animation](https://wewannabefree.github.io/Анимация%20CSS3/) 
+[CSS3 Animation] (https://wewannabefree.github.io/Анимация%20CSS3/) 
 
-[Modal windows]((https://wewannabefree.github.io/Анимация%20CSS3/Модальные%20окна/) 
+[Modal windows] (https://wewannabefree.github.io/Анимация%20CSS3/Модальные%20окна/) 
 
 [Pseudoclasses and pseudoelements](https://wewannabefree.github.io/Псевдоклассы%20и%20псевдоэлементы/) 
 
