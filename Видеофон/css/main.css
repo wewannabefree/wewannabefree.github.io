@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ?? */
+}
+/* Сброс всех отступов, чтобы не было белой рамки */
+body {
+  margin: 0;
+}
+.section {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  /* Текст и видео занимают весь экран */
+  display: table;
+  /* Текст встаёт посередине, а не слева */
+  background-size: cover;
+}
+.wrap-block {
+  display: table-cell;
+  /* Текст встаёт посередине, а не сверху */
+  vertical-align: middle;
+  color: white;
+}
+.wrap-block p {
+  font-size: 20px;
+  font-style: italic;
+  background-color: black;
+  display: inline-block;
+}
