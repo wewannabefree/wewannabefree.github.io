@@ -19,5 +19,5 @@ Then follow me
 
 [Modal windows](https://wewannabefree.github.io/Модальные%20окна/) 
 
-[Псевдоклассы и псевдоэлементы](https://wewannabefree.github.io/Псевдоклассы%20и%20псевдоэлементы/) 
+[Pseudoclasses and pseudoelements](https://wewannabefree.github.io/Псевдоклассы%20и%20псевдоэлементы/) 
 
