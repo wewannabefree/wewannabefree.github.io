@@ -17,7 +17,7 @@ Then follow me
 
 [CSS3 Animation](https://wewannabefree.github.io/Анимация%20CSS3/) 
 
-[Modal windows](https://wewannabefree.github.io/Модальные%20окна) 
+[Modal windows](https://wewannabefree.github.io/Модальные%20окна/) 
 
 [Pseudoclasses and pseudoelements](https://wewannabefree.github.io/Псевдоклассы%20и%20псевдоэлементы/) 
 
