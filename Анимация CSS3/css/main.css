@@ -1,0 +1,247 @@
+/* Информация: https://html5book.ru/css3-animation/ */
+@-webkit-keyframes Dva {
+  /* Первый кадр анимации */
+  0% {
+    margin-left: 0;
+  }
+  /* Конечный кадр анимации */
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes Dva {
+  /* Первый кадр анимации */
+  0% {
+    margin-left: 0;
+  }
+  /* Конечный кадр анимации */
+  100% {
+    margin-left: 1400px;
+  }
+}
+.dva {
+  -webkit-animation-name: Dva;
+          animation-name: Dva;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.dva img {
+  width: 200px;
+  height: 200px;
+}
+@-webkit-keyframes Mercy {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes Mercy {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.mercy {
+  -webkit-animation-name: Mercy;
+          animation-name: Mercy;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.mercy img {
+  width: 200px;
+  height: 200px;
+}
+@-webkit-keyframes Reaper {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes Reaper {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.reaper {
+  -webkit-animation-name: Reaper;
+          animation-name: Reaper;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+.reaper img {
+  width: 200px;
+  height: 200px;
+}
+@-webkit-keyframes Pharah {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes Pharah {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.pharah {
+  -webkit-animation-name: Pharah;
+          animation-name: Pharah;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.pharah img {
+  height: 200px;
+  width: 200px;
+}
+@-webkit-keyframes Widowmaker {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes Widowmaker {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.widowmaker {
+  -webkit-animation-name: Widowmaker;
+          animation-name: Widowmaker;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.widowmaker img {
+  height: 200px;
+  width: 200px;
+}
+@-webkit-keyframes DvaOne {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes DvaOne {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.dva1 {
+  -webkit-animation-name: DvaOne;
+          animation-name: DvaOne;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+.dva1 img {
+  height: 200px;
+  width: 200px;
+}
+@-webkit-keyframes MercyOne {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes MercyOne {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+.mercy1 {
+  -webkit-animation-name: MercyOne;
+          animation-name: MercyOne;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+}
+.mercy1 img {
+  height: 200px;
+  width: 200px;
+}
+.genji img {
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+}
+.hanzo img {
+  width: 200px;
+  height: 200px;
+}
+.sombra img {
+  width: 200px;
+  height: 200px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.ana img {
+  width: 200px;
+  height: 200px;
+  padding-top: 40px;
+  margin-left: 170px;
+}
+.orisa img {
+  width: 200px;
+  height: 200px;
+}
+.mccree img {
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+  margin-left: 100px;
+}
+.moira img {
+  height: 200px;
+  width: 200px;
+}
+.panel-group {
+  width: 1650px;
+}
+.panel-body1 {
+  height: 230px;
+}
+.hanzo {
+  padding-left: 30px;
+}

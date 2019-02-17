@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анимация CSS3</title>
+	<!-- Для работы табов и аккордеонов необходимо подключить стили Bootstrap (в данном случае для удобства) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Скрипт, необходимый для срабатывания анимации только когда она в поле зрения экрана (взят с https://mozgovoy.in.ua/poleznoe/18-wow-js-animate-css-skript-animatsii-pri-prokrutke-stranitsy) -->
+	<script src="js/wow.min.js"></script> 
+	<link rel="stylesheet" href="css/animate.css"> <!-- Скачанный файл со всеми анимациями с сайта https://daneden.github.io/animate.css/ -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<h3>   Анимация на основе CSS3</h3>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+             Анимация происходит равномерно на протяжении всего времени, без колебаний в скорости. (animation-timing-function: <b>linear</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="dva">
+			<img src="img/Dva.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+<div class="panel-group" id="accordion1">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+            Функция по умолчанию, анимация начинается медленно, разгоняется быстро и замедляется в конце. (animation-timing-function: <b>ease</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="mercy">
+			<img src="img/Mercy.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion2">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+           Анимация начинается медленно, а затем плавно ускоряется в конце.  (animation-timing-function: <b>ease-in</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="reaper">
+			<img src="img/Reaper.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion3">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFour">
+           Анимация начинается быстро и плавно замедляется в конце.  (animation-timing-function: <b>ease-out</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="pharah">
+			<img src="img/Pharah.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion4">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFive">
+           Анимация проигрывается бесконечно. (animation-iteration-count: <b>infinite</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="widowmaker">
+			<img src="img/Widowmaker.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion5">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion5" href="#collapseSix">
+           Анимация проигрывается с начала до конца, затем в обратном направлении. (Если анимация повторяется только один раз, то это свойство не имеет смысла) (animation-direction: <b>alternate</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="dva1">
+			<img src="img/Dva.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+<div class="panel-group" id="accordion6">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion6" href="#collapseSeven">
+           Анимация проигрывается с конца. (animation-direction: <b>reverse</b>)
+          </a>
+       </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body"> <!-- Тело аккордеона -->
+		<div class="mercy1">
+			<img src="img/Mercy.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<h3>   Анимация на основе animate.css</h3>  <!-- Чтобы анимация работала пишется animated *необходимая анимация* (например, flash) ИЛИ wow *необходимая анимация* (если элемент не находится в пределах экрана изначально -->
+
+<div class="panel-group" id="accordion7">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion7" href="#collapseEight">
+           Animated bounce
+          </a>
+       </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="genji wow bounce" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Genji.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion8">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion8" href="#collapseNine">
+           Animated flash
+          </a>
+       </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="hanzo wow flash" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Hanzo.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion9">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion9" href="#collapseTen">
+           Animated pulse
+          </a>
+       </h4>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="sombra wow pulse" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Sombra.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion10">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion10" href="#collapseEleven">
+           Animated rubberBand
+          </a>
+       </h4>
+    </div>
+    <div id="collapseEleven" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="ana wow rubberBand" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Ana.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion11">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion11" href="#collapseTwelve">
+           Animated rubberBand
+          </a>
+       </h4>
+    </div>
+    <div id="collapseTwelve" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="orisa wow shake" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Orisa.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="panel-group" id="accordion12">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion12" href="#collapseThirteen">
+           Animated bounceOut
+          </a>
+       </h4>
+    </div>
+    <div id="collapseThirteen" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="mccree wow bounceOut" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Mccree.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+<div class="panel-group" id="accordion13">
+  <div class="panel panel-default">
+    <div class="panel-heading"> <!-- Шапка аккордеона -->
+      <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion13" href="#collapseFourteen">
+           Animated fadeIn
+          </a>
+       </h4>
+    </div>
+    <div id="collapseFourteen" class="panel-collapse collapse in">  <!-- "collapse in" - класс, отвечающий за открытие аккордеона -->
+      <div class="panel-body1"> <!-- Тело аккордеона -->
+		<div class="moira wow fadeIn" data-wow-delay="0.5s" data-wow-iteration=infinite>
+			<img src="img/Moira.jpg" alt="">
+		</div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+ <!-- Чтобы анимация работала пишется animated *необходимая анимация* (например, flash) ИЛИ wow *необходимая анимация* (если элемент не находится в пределах экрана изначально -->
+<!-- <div class="box wow flipInX">  
+<img src="img/Mercy.jpg" alt="">
+</div> -->
+
+
+
+<script> /* Скрипт нужен, чтобы инициализировать wow.min.js */
+ new WOW().init();
+</script>
+<!-- Для работы табов и аккордеонов необходимо подключить библиотеку jQuery (в данном случае для удобства) -->
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!-- Для работы табов и аккордеонов необходимо подключить Js-Bootstap (после библиотеки jQuery) (в данном случае для удобства) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
