@@ -1,0 +1,163 @@
+.example2 .a1:hover {
+  color: red;
+}
+.example2 .a2:hover {
+  text-decoration: none;
+  color: red;
+}
+.example2 .a3:hover {
+  background-color: green;
+}
+.example2 .a4:hover {
+  background-color: green;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.example2 .a5:hover {
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.example2 .a6:hover {
+  letter-spacing: 2px;
+}
+.example2 .a7:hover {
+  text-decoration: line-through;
+}
+.example2 .a8:hover {
+  text-decoration: overline;
+}
+.example2 .a9:hover {
+  font-style: italic;
+}
+.example2 .a10 {
+  display: block;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+.example2 .a10::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: red;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.example2 .a10::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: red;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.example2 .a10:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.example2 .a10:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.example3 .a1:focus {
+  color: red;
+}
+.example3 .a2:focus {
+  text-decoration: none;
+  color: red;
+}
+.example3 .a3:focus {
+  background-color: green;
+}
+.example3 .a4:focus {
+  background-color: green;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.example3 .a5:focus {
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.example3 .a6:focus {
+  letter-spacing: 2px;
+}
+.example3 .a7:focus {
+  text-decoration: line-through;
+}
+.example3 .a8:focus {
+  text-decoration: overline;
+}
+.example3 .a9:focus {
+  font-style: italic;
+}
+.example3 .a10 {
+  display: block;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+.example3 .a10::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: red;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.example3 .a10::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: red;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.example3 .a10:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.example3 .a10:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.example4 .a1:visited {
+  color: red;
+}
+.example5 .a1:checked + span {
+  background-color: red;
+}
+.example5 .a2:checked + span {
+  background-color: blue;
+}
+.example5 .a3:checked + span {
+  background-color: green;
+}
+.example5 .a4:checked + span {
+  background-color: yellow;
+}
+.example5 .a5:checked + span {
+  background-color: grey;
+}
+.example5 .a6:checked + span {
+  background-color: pink;
+}

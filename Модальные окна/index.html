@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Для работы модальных окон необходимо подключить стили Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Для работы других модальных окон можно еще подключить Magnific-popup (предварительно скачав библиотеку и добавив файл magnific-popup.css в папку css) -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<h3>Bootstrap</h3>
+
+
+<!-- I. Модальные окна Bootstrap -->
+<!-- #1 Модальное окно по вызову кнопки -->
+
+<!-- Кнопка -->
+<div class="container">
+	<button class="btn-invoke" data-target="#example" data-toggle="modal">Кнопка призыва модального окна</button>
+</div>
+
+<br>
+<br>
+
+<!-- Модальное окно -->
+
+<div class="modal fade" id="example" tabindex="-1" role="dialog"> <!-- Модальное окно -->
+  <div class="modal-dialog" role="document">  <!-- Корпус окна -->
+    <div class="modal-content">  <!-- Содержимое окна -->
+      <div class="modal-header"> <!-- Шапка окна -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <!-- Кнопка закрытия окна -->
+        <h4 class="modal-title">Заголовок окна (от Bootstrap) (modal-title)</h4> <!-- Заголовок -->
+      </div>
+     <div class="modal-body"> <!-- Тело окна -->
+        <em>Тело окна (modal-body)</em>
+        <br>
+        <h4>Процесс создания модального окна из кнопки</h4>
+        <li>Подключение стилей bootsrap: <br>
+        <span>(link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")</span></li>
+		<br>
+        <li>Подключение библотеки jQuery: <br>
+        <span>(script  src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script)</span>
+        </li>
+		<br>
+        <li>Подключение js-файла Bootstrap: <br>
+        <span>(script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script)</span></li>
+		<br>
+		<li>Создание кнопки
+		<ol>
+		<li>Приписывание ей data-target="" - на какой id эта кнопка будет ссылаться</li>
+		<li>Приписывание ей data-toggle="modal" - атрибут стилей Bootstrap, который используется для вызова модальных окон</li>	
+		</ol>
+		</li>
+		<br>
+		<li>Создание модального окна
+		<ol>
+		<li>Взятие готового окна с сайта Bootstrap </li>
+		<li>Приписывание ему id="" - на что будет ссылаться кнопка при нажатии</li>
+		<li>Редактирование окна и заполнение его контентом:
+		<ol>
+			<li>Заголовок окна (modal-title)</li>
+			<li>Тело окна (modal-body)</li>
+			<li>Нижняя часть окна (modal-footer)</li>
+		</ol>
+		</li>
+		</ol>
+		</li>
+     </div>
+      <div class="modal-footer"> <!-- Нижняя часть окна -->
+        <p>Нижняя часть окна (modal-footer)</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>	
+  </div>
+</div>
+
+
+
+<!-- #2 Модальное окно по нажатию ссылки -->
+
+<!-- Ссылка -->
+<div class="container">
+	<a class="link-invoke" href="#example1" data-toggle="modal">Ссылка призыва модального окна</a>
+</div>
+
+<br>
+<br>
+
+<!-- Модальное окно -->
+
+<div class="modal fade" id="example1" tabindex="-1" role="dialog"> <!-- Модальное окно -->
+  <div class="modal-dialog" role="document">  <!-- Корпус окна -->
+    <div class="modal-content">  <!-- Содержимое окна -->
+      <div class="modal-header"> <!-- Шапка окна -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <!-- Кнопка закрытия окна -->
+        <h4 class="modal-title">Заголовок окна (от Bootstrap) (modal-title)</h4> <!-- Заголовок -->
+      </div>
+     <div class="modal-body"> <!-- Тело окна -->
+        <em>Тело окна (modal-body)</em>
+        <br>
+        <h4>Процесс создания модального окна из ссылки</h4>
+        <li>Подключение стилей bootsrap: <br>
+        <span>(link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")</span></li>
+		<br>
+        <li>Подключение библотеки jQuery: <br>
+        <span>(script  src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script)</span>
+        </li>
+		<br>
+        <li>Подключение js-файла Bootstrap: <br>
+        <span>(script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script)</span></li>
+		<br>
+		<li>Создание ссылки
+		<ol>
+		<li>Приписывание ей href="" - на какой id эта кнопка будет ссылаться</li>
+		<li>Приписывание ей data-toggle="modal" - атрибут стилей Bootstrap, который используется для вызова модальных окон</li>	
+		</ol>
+		</li>
+		<br>
+		<li>Создание модального окна
+		<ol>
+		<li>Взятие готового окна с сайта Bootstrap </li>
+		<li>Приписывание ему id="" - на что будет ссылаться кнопка при нажатии</li>
+		<li>Редактирование окна и заполнение его контентом:
+		<ol>
+			<li>Заголовок окна (modal-title)</li>
+			<li>Тело окна (modal-body)</li>
+			<li>Нижняя часть окна (modal-footer)</li>
+		</ol>
+		</li>
+		</ol>
+		</li>
+     </div>
+      <div class="modal-footer"> <!-- Нижняя часть окна -->
+        <p>Нижняя часть окна (modal-footer)</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>	
+  </div>
+</div>
+
+<!-- #2.1 Модальное окно других размеров -->
+
+<!-- Ссылка -->
+<div class="container">
+	<a class="link-invoke" href="#example2" data-toggle="modal">Ссылка призыва большого модального окна</a>
+</div>
+
+<br>
+<br>
+
+<!-- Модальное окно (большое)-->
+
+<div class="modal fade" id="example2" tabindex="-1" role="dialog"> <!-- Модальное окно -->
+  <div class="modal-dialog modal-lg" role="document">  <!-- Корпус окна (СЮДА ДОБАВЛЯЕТСЯ modal-lg ДЛЯ УВЕЛИЧЕНИЯ РАЗМЕРА ОКНА-->
+    <div class="modal-content">  <!-- Содержимое окна -->
+      <div class="modal-header"> <!-- Шапка окна -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <!-- Кнопка закрытия окна -->
+        <h4 class="modal-title">Заголовок окна (от Bootstrap) (modal-title)</h4> <!-- Заголовок -->
+      </div>
+     <div class="modal-body"> <!-- Тело окна -->
+        <em>Тело окна (modal-body)</em>
+        <br>
+        <h4>Процесс создания большого модального окна из ссылки</h4>
+        <li>Подключение стилей bootsrap: <br>
+        <span>(link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")</span></li>
+		<br>
+        <li>Подключение библотеки jQuery: <br>
+        <span>(script  src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script)</span>
+        </li>
+		<br>
+        <li>Подключение js-файла Bootstrap: <br>
+        <span>(script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script)</span></li>
+		<br>
+		<li>Создание ссылки
+		<ol>
+		<li>Приписывание ей href="" - на какой id эта кнопка будет ссылаться</li>
+		<li>Приписывание ей data-toggle="modal" - атрибут стилей Bootstrap, который используется для вызова модальных окон</li>	
+		</ol>
+		</li>
+		<br>
+		<li>Создание модального окна
+		<ol>
+		<li>Взятие готового окна с сайта Bootstrap </li>
+		<li>Приписывание ему id="" - на что будет ссылаться кнопка при нажатии</li>
+		<li>Редактирование окна и заполнение его контентом:
+		<ol>
+			<li>Заголовок окна (modal-title)</li>
+			<li>Тело окна (modal-body)</li>
+			<li>Нижняя часть окна (modal-footer)</li>
+		</ol>
+		</li>
+		</ol>
+		</li>
+		<li>Увеличение модального окна
+		<ol>
+			<li>К классу "modal-dialog" добавляется "modal-lg" ("modal-dialog modal-lg"), что делает окно больших размеров</li>
+		</ol></li>
+     </div>
+      <div class="modal-footer"> <!-- Нижняя часть окна -->
+        <p>Нижняя часть окна (modal-footer)</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>	
+  </div>
+</div>
+
+
+
+
+
+<!-- Ссылка -->
+<div class="container">
+	<a class="link-invoke" href="#example3" data-toggle="modal">Ссылка призыва маленького модального окна</a>
+</div>
+
+<br>
+<br>
+
+<!-- Модальное окно (маленькое)-->
+
+<div class="modal fade" id="example3" tabindex="-1" role="dialog"> <!-- Модальное окно -->
+  <div class="modal-dialog modal-sm" role="document">  <!-- Корпус окна (СЮДА ДОБАВЛЯЕТСЯ modal-lg ДЛЯ УМЕНЬШЕНИЯ РАЗМЕРА ОКНА-->
+    <div class="modal-content">  <!-- Содержимое окна -->
+      <div class="modal-header"> <!-- Шапка окна -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <!-- Кнопка закрытия окна -->
+        <h4 class="modal-title">Заголовок окна (от Bootstrap) (modal-title)</h4> <!-- Заголовок -->
+      </div>
+     <div class="modal-body"> <!-- Тело окна -->
+        <em>Тело окна (modal-body)</em>
+        <br>
+        <h4>Процесс создания маленького модального окна из ссылки</h4>
+        <li>Подключение стилей bootsrap: <br>
+        <span>(link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/<br>css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RY <br>dg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")</span></li>
+		<br>
+        <li>Подключение библотеки jQuery: <br>
+        <span>(script  src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>)</span>
+        </li>
+		<br>
+        <li>Подключение js-файла Bootstrap: <br>
+        <span> script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/<br>js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2 <br> mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"</script>) </span> </li>
+		<br>
+		<li>Создание ссылки
+		<ol>
+		<li>Приписывание ей href="" - на какой id эта кнопка будет ссылаться</li>
+		<li>Приписывание ей data-toggle="modal" - атрибут стилей Bootstrap, который используется для вызова модальных окон</li>	
+		</ol>
+		</li>
+		<br>
+		<li>Создание модального окна
+		<ol>
+		<li>Взятие готового окна с сайта Bootstrap </li>
+		<li>Приписывание ему id="" - на что будет ссылаться кнопка при нажатии</li>
+		<li>Редактирование окна и заполнение его контентом:
+		<ol>
+			<li>Заголовок окна (modal-title)</li>
+			<li>Тело окна (modal-body)</li>
+			<li>Нижняя часть окна (modal-footer)</li>
+		</ol>
+		</li>
+		</ol>
+		</li>
+		<li>Уменьшение модального окна
+		<ol>
+			<li>К классу "modal-dialog" добавляется "modal-sm" ("modal-dialog modal-sm"), что делает окно маленьких размеров</li>
+		</ol></li>
+     </div>
+      <div class="modal-footer"> <!-- Нижняя часть окна -->
+        <p>Нижняя часть окна (modal-footer)</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>	
+  </div>
+</div>
+
+
+<h3>Magnific-popup</h3>
+
+
+<!--II. Модальные окна Magnific-popup -->
+<!-- #1 Модальное окно по нажатию ссылки -->
+
+<!-- Ссылка -->
+<div class="container">
+	<a class="link-invoke_magnific" href="img/-C41jaiYDg4.jpg">Ссылка призыва модального окна</a>
+</div>
+
+<br>
+<br>
+
+<!-- #2. Модальное окно с прокручиванием по нажатию ссылки-->
+
+<!-- Ссылка -->
+<div class="link-invoke_magnific1">
+	<h4>Модальное окно с открытием картинок</h4>
+	<a href="img/Mangekyo_Sasuke.jpg" title="MS Sasuke"><img src="img/Mangekyo_Sasuke.jpg" width="75" height="75"></a>
+	<a href="img/Eternal_Mangekyo_Sasuke.jpg" title="EMS Sasuke"><img src="img/Eternal_Mangekyo_Sasuke.jpg" width="75" height="75"></a>
+	<a href="img/Sasuke's_Rinnegan.jpg" title="Rinnegan Sasuke"><img src="img/Sasuke's_Rinnegan.jpg" width="75" height="75"></a>
+</div>
+
+<br>
+<br>
+
+<!-- #3. Модальное окно с динамичным появлением-->
+
+<h4>Модальное окно с динамичным появлением</h4>
+  <ul class="dinamic-popups" id="inline-popups">
+    <li><a href="#example4" data-effect="mfp-zoom-in">Приближение</a></li>
+    <li><a href="#example4" data-effect="mfp-newspaper">Газетный заголовок</a></li>
+    <li><a href="#example4" data-effect="mfp-move-horizontal">Горизонтальное появление</a></li>
+    <li><a href="#example4" data-effect="mfp-move-from-top">Вертикальное появление</a></li>
+    <li><a href="#example4" data-effect="mfp-3d-unfold">3d-разворот</a></li>
+    <li><a href="#example4" data-effect="mfp-zoom-out">Отдаление</a></li>
+  </ul>
+
+  <div id="example4" class="white-popup mfp-with-anim mfp-hide">
+  HMTL, CSS и js настройки взяты с сайта https://codepen.io/dimsemenov/pen/GAIkt.
+  </div>
+
+<br>
+<br>
+
+<h3>СodyHouse</h3>
+
+<!-- III. Пример модального окна от сайта CodyHouse, архив которого скачан по ссылке https://codyhouse.co/gem/svg-modal-window -->
+<!-- #1 Модальное окно по нажатию ссылки -->
+
+<!-- Ссылка -->
+<div class="container">
+	<a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger">Ссылка на скачанное модальное окно</a>  <!-- Ссылка скопирована с файла index.hmtl из архива -->
+</div>
+
+
+<!-- Модальное окно --> <!-- Также скопировано с файла index.hmtl -->
+
+<div class="cd-modal" data-modal="modal-trigger">
+		<div class="cd-svg-bg" 
+		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+				<title>SVG Modal background</title>
+				<path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+				<path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+				<path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+			</svg>
+		</div>
+
+		<div class="cd-modal-content">
+			<p>
+				Это специальное модальное окно с сайта CodyHousе, скачанное отсюда: <br>
+				https://codyhouse.co/gem/svg-modal-window
+
+				 <h4>Процесс подключения такого окна к сайту:</h4>
+        <li>
+        Скачать архив с модальным окном отсюда:<br>
+        <span>https://codyhouse.co/gem/svg-modal-window</span>
+        </li>
+
+        <li>Скопировать файлы в папку js:<br>
+        <ol>
+        <li>main.js</li>
+        <li>snap.svg-min.js</li>
+        </ol>
+        </li>
+
+        <li>
+        Cкопировать картинки в папку img, если таковые имеются (в нашем случае это cd-icon-close.svg - кнопка закрытия) <br>
+        </li>
+
+		<li>
+		Скопировать cd-modal (содержимое модального окна) с файла index.html из архива в наш документ 
+		</li>
+
+		<li>
+		Скопировать стили из архивного файла style.css в наш main.less, начиная с абзаца "Modal Window"
+		</li>
+
+        <li>
+        Подключить скрипты двух вышесказанных js-файлов 	
+        </li>
+			</p>
+		</div> <!-- cd-modal-content -->
+
+		<a href="#0" class="modal-close">Close</a>
+	</div> <!-- cd-modal -->
+
+
+
+
+
+
+
+
+<!-- Для работы модальных окон необходимо подключить библиотеку jQuery -->
+<script  src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!-- Для работы модальных окон необходимо подключить Js-Bootstap (после библиотеки jQuery) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Чтобы использовать Magnific-popup необходимо загрузить файл jquery.magnific-popup.min.js в папку js, а так же подключить скрипт Magnific-popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Для инициализации модального окна через Magnific-popup используется скрипт с сайта  -->
+<script>
+	$(document).ready(function() {
+  $('.link-invoke_magnific').magnificPopup({type:'image'});  /* $('.link-invoke') - указание пути до класса ссылки */
+});
+</script>
+
+<script>
+	$(document).ready(function() {
+	$('.link-invoke_magnific1').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>Naruto Universe</small>';
+			}
+		}
+	});
+});
+</script>
+
+<script>
+	// Inline popups
+$('#inline-popups').magnificPopup({
+  delegate: 'a',
+  removalDelay: 500, //delay removal by X to allow out-animation
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  },
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+</script>
+
+
+<!-- Для работы модального окна от CodyHouse подключаем скрипты, которые предварительно загружены в папку js из скаченного архива по ссылке https://codyhouse.co/gem/svg-modal-window  -->
+<script src="js/snap.svg-min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

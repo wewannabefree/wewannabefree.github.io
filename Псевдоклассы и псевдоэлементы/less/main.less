@@ -1,0 +1,174 @@
+.example2 {
+	.a1:hover {
+		color: red;
+	}
+
+	.a2:hover {
+		text-decoration: none;
+		color: red;
+	}
+
+	.a3:hover {
+		background-color: green;
+	}
+
+	.a4:hover {
+		background-color: green;
+		transition: 2s;
+	}
+
+	.a5:hover {
+		border: 1px solid blue;
+		text-decoration: none;
+	}
+
+	.a6:hover {
+		letter-spacing: 2px;
+	}
+
+	.a7:hover {
+		text-decoration: line-through;
+	}
+
+	.a8:hover {
+		text-decoration: overline;
+	}
+
+	.a9:hover {
+		font-style: italic;
+	}
+	
+	.a10 {
+		display: block;
+		width: 120px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.a10::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		transform-origin: 100%;
+		transform: scaleX(0);
+		background-color: red;
+		transition: all 0.2s;		
+	}	
+	.a10::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		transform-origin: 0%;
+		transform: scaleX(0);
+		background-color: red;
+		transition: all 0.2s;		
+	}	
+	.a10:hover::before {
+		transform: scaleX(1);
+	}
+	.a10:hover::after {
+		transform: scaleX(1);
+	}
+}
+
+.example3 {
+	.a1:focus {
+		color: red;
+	}
+
+	.a2:focus {
+		text-decoration: none;
+		color: red;
+	}
+
+	.a3:focus {
+		background-color: green;
+	}
+
+	.a4:focus {
+		background-color: green;
+		transition: 2s;
+	}
+
+	.a5:focus {
+		border: 1px solid blue;
+		text-decoration: none;
+	}
+
+	.a6:focus {
+		letter-spacing: 2px;
+	}
+
+	.a7:focus {
+		text-decoration: line-through;
+	}
+
+	.a8:focus {
+		text-decoration: overline;
+	}
+
+	.a9:focus {
+		font-style: italic;
+	}
+
+	.a10 {
+		display: block;
+		width: 120px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.a10::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		transform-origin: 100%;
+		transform: scaleX(0);
+		background-color: red;
+		transition: all 0.2s;		
+	}	
+	.a10::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		transform-origin: 0%;
+		transform: scaleX(0);
+		background-color: red;
+		transition: all 0.2s;		
+	}	
+	.a10:focus::before {
+		transform: scaleX(1);
+	}
+	.a10:focus::after {
+		transform: scaleX(1);
+	}
+}
+
+.example4 {
+	.a1:visited {
+		color: red;
+	}
+}
+
+.example5 {
+	.a1:checked + span {
+		background-color: red;
+	}
+	.a2:checked + span {
+		background-color: blue;
+	}
+	.a3:checked + span {
+		background-color: green;
+	}
+	.a4:checked + span {
+		background-color: yellow;
+	}
+	.a5:checked + span {
+		background-color: grey;
+	}
+	.a6:checked + span {
+		background-color: pink;
+	}
+}
